@@ -1,0 +1,28 @@
+{
+    "name": "rival/pluto-framework",
+    "description": "The Future of PHP Frameworks. Lightweight, Fast, and Modern.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rival Developer",
+            "email": "rival@example.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0",
+        "nesbot/carbon": "^2.73"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        },
+        "files": [
+            "App/Helpers.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
