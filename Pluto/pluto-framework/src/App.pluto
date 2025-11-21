@@ -1,0 +1,16 @@
+<script>
+import { createSignal } from 'pluto';
+const countSignal = createSignal(0);
+
+const increment = () => { 
+    countSignal.set(countSignal.get() + 1); 
+};
+</script>
+
+<div>
+    <div id="wrapper">
+        <h1>Pluto Counter: {countSignal}</h1> 
+        <p>Hello World</p>
+    </div>
+    <button onclick="increment()">Button Test</button> 
+</div>
